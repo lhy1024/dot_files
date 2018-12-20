@@ -10,6 +10,7 @@ alias ls='ls --color=auto'
 export EDITOR=vim
 export VISUAL=vim
 export SUDO_EDITOR=vim
+export TERM=xterm-256color
 export PATH=$PATH:～/.local/bin
 
 HISTFILE=~/.histfile
@@ -26,7 +27,7 @@ prompt walters
 
 export ZSH=/usr/share/oh-my-zsh
 
-ZSH_THEME="jreese"
+ZSH_THEME="pygmalion"
 source $ZSH/oh-my-zsh.sh
 
 plugins=(
@@ -37,15 +38,15 @@ plugins=(
     history
     pip
     python
-    vi-mode
     )
-
 . /usr/share/oh-my-zsh/z.sh
-
+case $(uname -a) in
+   *Microsoft*) unsetopt BG_NICE ;;
+esac
 bindkey -v
 bindkey '^f' autosuggest-accept
 bindkey '^j' autosuggest-execute
 bindkey "${terminfo[khome]}" beginning-of-line
 bindkey "${terminfo[kend]}" end-of-line
 
-alias cmake-android-28='cmake -DCMAKE_SYSTEM_NAME=Android -DCMAKE_ANDROID_NDK=/home/daquexian/android/android-ndk-r17b -DCMAKE_ANDROID_ARCH_ABI=arm64-v8a -DCMAKE_ANDROID_NDK_TOOLCHAIN_VERSION=clang -DCMAKE_ANDROID_STL_TYPE=c++_shared -DCMAKE_SYSTEM_VERSION=28'
+alias ls='exa --color=auto'
