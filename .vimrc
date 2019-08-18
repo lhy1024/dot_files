@@ -1,6 +1,6 @@
 set encoding=utf-8
 
-set cmdheight=2
+set cmdheight=1
 
 cmap w!! w !sudo tee > /dev/null %
 cmap vsb vertical sb
