@@ -15,7 +15,7 @@ SAVEHIST=1000
 unsetopt beep
 
 # Path to your oh-my-zsh installation.
-export ZSH="/home/daquexian/.oh-my-zsh"
+export ZSH="~/.oh-my-zsh"
 
 # Uncomment the following line to use hyphen-insensitive completion.
 # Case-sensitive completion must be off. _ and - will be interchangeable.
@@ -76,6 +76,7 @@ fh(){
 alias vim=nvim
 alias cat=bat
 alias ls=exa
+alias top=htop
 # Map caps lock to control
 setxkbmap -option ctrl:nocaps
 # Map single control to escape

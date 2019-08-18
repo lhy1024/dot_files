@@ -64,6 +64,12 @@ echo Y | pacman -S mlocate
 echo Y | pacman -S tcping
 echo Y | pacman -S lsof
 echo Y | pacman -S s-tui
+# trim
+sudo systemctl enable fstrim.timer
+sudo systemctl start fstrim.timer 
+sudo fstrim -v -a
+vim /etc/fstab # discard 
+# todo ramdisk
 
 ## database
 yay -S --noconfirm mongodb
@@ -72,6 +78,7 @@ echo Y | pacman -S redis
 echo Y | pacman -S mysql
 echo Y | pacman -S mycli
 echo Y | pacman -S phpmyadmin
+yay -S --noconfirm redis-desktop-manager  
 ## rabbitmq
 # https://blog.csdn.net/luckytanggu/article/details/78542700
 echo Y | pacman -S rabbitmq
@@ -194,7 +201,6 @@ sudo systemctl restart docker
 
 ## todo
 # todo extension 
-# todo trim
 # mhwd cmd todo
 # timezone cmd todo
 # todo git 
