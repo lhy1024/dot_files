@@ -200,7 +200,6 @@ sudo systemctl restart docker
 
 
 ## todo
-# todo extension 
 # mhwd cmd todo
 # timezone cmd todo
 # todo git 
