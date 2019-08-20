@@ -64,6 +64,7 @@ echo Y | pacman -S mlocate
 echo Y | pacman -S tcping
 echo Y | pacman -S lsof
 echo Y | pacman -S s-tui
+echo Y | pacman -S sysstat
 # trim
 sudo systemctl enable fstrim.timer
 sudo systemctl start fstrim.timer 
@@ -162,6 +163,13 @@ echo Y | pacman -S ttf-fira-code ttf-sarasa-gothic
 echo Y | pacman -S zip unzip file-roller
 yay -S --noconfirm dpkg
 
+## bluetooth
+pacman -S xorg-xinput
+pacman -S blueman
+yay -S --noconfirm evhz
+## manjaro nvidia driver
+# https://amazingrise.github.io/2019/04/20/Manjaro-Optimus-Dual-Monitor/#%E8%A7%A3%E5%86%B3%E6%96%B9%E6%B3%95
+
 
 # deepin
 # https://www.jianshu.com/p/a1e31a9a50dc
@@ -183,7 +191,7 @@ pacman -S virtualbox # by linux kernel # uname -a
 echo Y | pacman -S docker docker-composel
 sudo systemctl start docker
 sudo systemctl enable docker
-
+sudo usermod -aG docker lhy1024
 #todo
 yay -S nvidia-container --noconfirm # only #don't install nvidia-docker
 {\"registry-mirrors\": [\"https://docker.mirrors.ustc.edu.cn\"]}  /etc/docker/daemon.json # ?
@@ -202,7 +210,6 @@ sudo systemctl restart docker
 ## todo
 # mhwd cmd todo
 # timezone cmd todo
-# todo git 
 # zoho  outlook calender
 # win+<- win+->
 # echo Y | pacman -S onedrive # onedrive --monitor --confdir="~/.config/onedrive_lhy1024" 
