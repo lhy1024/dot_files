@@ -162,6 +162,8 @@ yay -S --noconfirm deepin-wxwork
 echo Y | pacman -S ttf-fira-code ttf-sarasa-gothic
 echo Y | pacman -S zip unzip file-roller
 yay -S --noconfirm dpkg
+yay -S --noconfirm rclone-browser # https://zoi.red/archives/52.html
+
 
 ## bluetooth
 pacman -S xorg-xinput

@@ -5,7 +5,7 @@
 # If not running interactively, don't do anything
 [[ $- != *i* ]] && return
 export TERM=xterm-256color
-export PATH=$PATH:～/.local/bin
+export PATH=$PATH:～/.local/bin:/opt/anaconda/bin
 source /usr/share/oh-my-zsh/custom/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 source /usr/share/oh-my-zsh/custom/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh
 
@@ -15,7 +15,7 @@ SAVEHIST=1000
 unsetopt beep
 
 # Path to your oh-my-zsh installation.
-export ZSH="~/.oh-my-zsh"
+export ZSH="/usr/share/oh-my-zsh"
 
 # Uncomment the following line to use hyphen-insensitive completion.
 # Case-sensitive completion must be off. _ and - will be interchangeable.
@@ -48,6 +48,7 @@ plugins=(
     git
     archlinux
     history
+    extract
     pip
     python
     vi-mode
