@@ -214,7 +214,7 @@ sudo systemctl restart docker
 # timezone cmd todo
 # zoho  outlook calender
 # win+<- win+->
-
+# vscode config
 
 
 
