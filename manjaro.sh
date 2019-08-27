@@ -214,7 +214,6 @@ sudo systemctl restart docker
 # timezone cmd todo
 # zoho  outlook calender
 # win+<- win+->
-# echo Y | pacman -S onedrive # onedrive --monitor --confdir="~/.config/onedrive_lhy1024" 
 
 
 
