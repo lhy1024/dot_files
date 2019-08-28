@@ -216,7 +216,7 @@ sudo systemctl restart docker
 # zoho  outlook calender
 # win+<- win+->
 # vscode config
-
+# Trackpad gesture
 
 
 # sudo docker run -it --runtime nvidia -e DISPLAY=unix$DISPLAY -v /tmp/.X11-unix:/tmp/.X11-unix -v /home/lhy/no4:/share --network=host --name 444 nvidia/cuda:8.0-cudnn6-devel-ubuntu16.04 bash 
