@@ -42,6 +42,7 @@ echo Y | pacman -S neovim
 
 ## cmd
 echo Y | pacman -S exa
+echo Y | pacman -S expect
 echo Y | pacman -S bat
 echo Y | pacman -S xclip
 echo Y | pacman -S tmux
