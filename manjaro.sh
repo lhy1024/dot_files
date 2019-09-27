@@ -42,6 +42,7 @@ echo Y | pacman -S neovim
 
 ## cmd
 echo Y | pacman -S exa
+echo Y | pacman -S aria2
 echo Y | pacman -S expect
 echo Y | pacman -S bat
 echo Y | pacman -S xclip
@@ -157,6 +158,7 @@ echo Y | pacman -S telegram-desktop
 yay -S google-earth-pro --noconfirm
 echo Y | pacman -S wireshark-qt
 echo Y | pacman -S tusk
+echo Y | pacman -S gparted
 yay -S --noconfirm fsearch-git 
 yay -S --noconfirm deepin-wine-wechat 
 yay -S --noconfirm deepin-wxwork
@@ -164,7 +166,7 @@ echo Y | pacman -S ttf-fira-code ttf-sarasa-gothic
 echo Y | pacman -S zip unzip file-roller
 yay -S --noconfirm dpkg
 yay -S --noconfirm rclone-browser # https://zoi.red/archives/52.html
-
+git clone https://github.com/puneetsl/lotion && ./install.sh
 
 ## bluetooth
 pacman -S xorg-xinput
@@ -185,7 +187,7 @@ echo Y | pacman -Rsc kde-applications
 echo Y | pacman -R thunderbird
 echo Y | pacman -Rs xterm
 echo Y | pacman -Rs calligra
-echo Y | pacman -S libreoffice-fresh
+echo Y | pacman -S  wps-office ttf-wps-fonts 
 
 pacman -S virtualbox # by linux kernel # uname -a
 
