@@ -162,6 +162,7 @@ echo Y | pacman -S gparted
 yay -S --noconfirm fsearch-git 
 yay -S --noconfirm deepin-wine-wechat 
 yay -S --noconfirm deepin-wxwork
+yay -S slack-desktop-dark --noconfirm
 echo Y | pacman -S ttf-fira-code ttf-sarasa-gothic
 echo Y | pacman -S zip unzip file-roller
 yay -S --noconfirm dpkg
