@@ -156,6 +156,7 @@ echo Y | pacman -S pandoc
 #echo Y | pacman -S teamviewer todo
 echo Y | pacman -S telegram-desktop
 yay -S google-earth-pro --noconfirm
+yay -S todoist-linux-bin --noconfirm
 echo Y | pacman -S wireshark-qt
 echo Y | pacman -S tusk
 echo Y | pacman -S gparted
