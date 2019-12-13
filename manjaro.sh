@@ -70,7 +70,7 @@ echo Y | pacman -S tcping
 echo Y | pacman -S lsof
 echo Y | pacman -S s-tui
 echo Y | pacman -S sysstat
-echo Y | pacman -S downgrade
+echo Y | pacman -S downgrade # https://blog.yoitsu.moe/arch-linux/aur_fresh_guidebook.html
 echo Y | pacman -S base-devel
 
 
