@@ -49,6 +49,9 @@ echo Y | pacman -S xclip
 echo Y | pacman -S tmux
 echo Y | pacman -S diff-so-fancy 
 git config --global core.pager "diff-so-fancy | less --tabs=4 -RFX"
+
+
+
 # zsh
 echo Y | pacman -S zsh
 yay -S --noconfirm oh-my-zsh-git
@@ -67,6 +70,11 @@ echo Y | pacman -S tcping
 echo Y | pacman -S lsof
 echo Y | pacman -S s-tui
 echo Y | pacman -S sysstat
+echo Y | pacman -S downgrade
+echo Y | pacman -S base-devel
+
+
+
 # trim
 sudo systemctl enable fstrim.timer
 sudo systemctl start fstrim.timer 

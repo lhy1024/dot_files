@@ -17,3 +17,5 @@
 	prompt = false
 [remote "origin"]
 	proxy = 
+[core]
+	autocrlf = input
