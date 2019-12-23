@@ -28,11 +28,6 @@ export EDITOR=nvim
 export VISUAL=nvim
 export SUDO_EDITOR=nvim
 
-export http_proxy=127.0.0.1:8118
-export https_proxy=127.0.0.1:8118
-export HTTP_PROXY=127.0.0.1:8118
-export HTTPS_PROXY=127.0.0.1:8118
-
 zstyle :compinstall filename '~/.zshrc'
 
 autoload -Uz compinit promptinit
