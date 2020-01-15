@@ -123,19 +123,8 @@ registry = "git://mirrors.ustc.edu.cn/crates.io-index"
 EOF
 
 
-## anaconda
-echo Y | pacman -S anaconda
-export PATH=/opt/anaconda/bin:$PATH
-conda config --add channels https://mirrors.ustc.edu.cn/anaconda/pkgs/main/
-conda config --add channels https://mirrors.ustc.edu.cn/anaconda/pkgs/free/
-conda config --add channels https://mirrors.ustc.edu.cn/anaconda/cloud/conda-forge/
-conda config --add channels https://mirrors.ustc.edu.cn/anaconda/cloud/msys2/
-conda config --add channels https://mirrors.ustc.edu.cn/anaconda/cloud/bioconda/
-conda config --add channels https://mirrors.ustc.edu.cn/anaconda/cloud/menpo/
-conda config --set show_channel_urls yes 
-# echo Y | pacman -S opencv
-# echo Y | pacman -S cuda
-# echo Y | pacman -S cudnn
+echo Y | pacman -S cuda cudnn ffmpeg
+yay -S tesseract-ocr-git --noconfirm
 
 
 ## go 
@@ -200,6 +189,7 @@ echo Y | pacman -Rs calligra
 echo Y | pacman -S  wps-office ttf-wps-fonts 
 
 pacman -S virtualbox # by linux kernel # uname -a
+pacman -S clash 
 
 
 # docker
