@@ -1,6 +1,6 @@
 [user]
 	name = lhy1024
-    email = admin@liudos.us
+	email = admin@liudos.us
 [alias]
     st = status
     ci = commit
@@ -19,3 +19,8 @@
 	proxy = 
 [core]
 	autocrlf = input
+	fileMode = false
+[https]
+	proxy = http://172.17.224.1:7890
+[http]
+	proxy = 

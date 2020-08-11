@@ -79,3 +79,9 @@ setxkbmap -option ctrl:nocaps
 # xcape -e 'Control_L=Escape'
 
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+
+export GOPATH=/mnt/d/go
+export GOROOT=/usr/lib/go
+export PATH=$GOROOT/bin:$PATH
+export PATH=/home/lhy1024/.tiup/bin:$PATH
+bash ~/proxy.sh set
